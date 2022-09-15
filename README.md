@@ -1,3 +1,18 @@
+# Cryptography:
+
+In the **Cryptography__OTP_repeated_key.py** file 
+First I create 4 auxiliary functions which are:
+
+**string_fractionator** = Fractionates the string into parts of the same amount as the key.
+
+**translate_hexa** = Translates letters from English to Hexadecimal.
+
+**xor_hexa_letters** = XORs 2 letters and translates them from hexadecimal to Latin-1.
+
+**crib_column_atack** = Checks if in a list of letters when XORing a "letter" all translations are within the search string.
+
+The attack takes advantage of the fact that the probability that a letter other than the one in the key will serve all the parts into which it is split is ridiculously small.So if that letter makes all the n-th letters also valid then it will be part of the key.
+
 # Probability Theory
 **Streaks:** 
 
