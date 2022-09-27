@@ -9,8 +9,8 @@ from english_words import english_words_set
 
 # ----- auxiliary functions -----
 
-adecedary = "abcdefghijklmnopqrstuvwxyz "
-adecedary_c = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+adecedary = "abcdefghijklmnopqrstuvwxyz"
+adecedary_c = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 def scroll(word, key):
   cracked_text = word
