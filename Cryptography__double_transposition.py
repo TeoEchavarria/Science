@@ -46,13 +46,12 @@ final_permutation = []
 
 print(len(list(permutations_row)), len(list(permutations_columns)))
 
-for p_col in permutations_columns:
-    for p_row in permutations_row:
+for p_row in permutations_row:
+    for p_col in permutations_columns:
         sentence_new = ""
         for row_int in p_row:    
             sentence_new += list_text([row_int[i] for i in p_col])
-        
-        
+            
         if len(fractioning_words(sentence_new)) > aux:
             aux = len(fractioning_words(sentence_new))
             final_permutation = [p_row, p_col]
