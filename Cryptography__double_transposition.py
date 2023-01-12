@@ -12,11 +12,12 @@ h = Hunspell()
 
 import numpy as np
 
+print(h.spell("IAMMATEO"))
 
 def fractioning_words(cracked_text):
   words = []
   num = len(cracked_text[::])
-  for j in range(3,7):
+  for j in range(3,6):
     for i in range(num-j):
       word = cracked_text[num-1-i-j:num-i]
       if h.spell(word):
